@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Examen Programación Aplicada II</title>
+</head>
+<body>
+    <header>
+        <div class = "titulo">
+            <h1>
+                PROGRAMACIÓN APLICADA II
+            </h1>
+        </div>
+        <img class = "computadora" src="img/computadora.png" alt="computadora">
+        <div class = "cuadro">
+            <div>
+                <h2>Temática:</h2>
+            <ul>
+                <li>Diseño Web</li>
+                <li>Aplicaciones Web</li>
+            </ul>
+            </div>
+        </div>
+        <nav class = "navs">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="indexAPICanvas.html">API Canvas</a></li>
+                <li><a href="indexAPIInteres.html">API de Interés</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <canvas id = "lienzo">
+            <script src="js/canvas.js"></script>
+        </canvas>        
+        <table>
+        <caption>Elije tu forma Geometrica y adaptala!!</caption>
+          <tr>          
+            <th>Elemento</th>
+            <th>Valor</th>
+          </tr>
+          <tr>
+            <td>
+              <label for="Círculo">Círculo</label>
+            </td>
+            <td>
+              <input type="radio" id="circulo" name ="marca" value ="Círculo">
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label for="Cuadrado">Cuadrado</label> 
+            </td>
+            <td>
+                <input type="radio" id="cuadrado" name ="marca" value ="Cuadrado">
+            </td>
+          </tr>            
+          <tr>
+            <td> Longitud del lado o radio: </td>
+            <td>
+                <input type="text" id="longi" name="longi" maxlength="3" onkeypress="return validaNumero(event);">
+            </td>
+          </tr>
+          <tr>
+            <td>Relleno:</td>
+            <td>
+                <select name="siOno" id="siOno">
+                <option value="1">si</option>
+                <option value="2">no</option>
+                </select>
+            </td>
+          </tr>
+          <tr>            
+                <th class = "thf"><input type="button" value="Dibujar" id="dibujar" onClick="mostrarDibujo()"></th>
+                <th> <input type="button" value="Limpiar" id="limpiar" onClick="borrar()">   </th>            
+          </tr>
+        </table> 
+        
+    </div>
+    <footer class = "final">
+        <figure class = "redes">
+            <a href="https://twitter.com/Randox37680203"><img src="sgv/twitter-svgrepo-com.svg" alt="Twitter"></a>
+            <a href="https://www.facebook.com/randox.mieses.9/"><img src="sgv/facebook-3-logo-svgrepo-com.svg" alt="Facebook"></a>
+        </figure>
+        <h2 class = "letraFooter"> ©Copyright</h2>
+    </footer>
+</body>
+</html>
